@@ -90,7 +90,7 @@ sh run -d qm9 -t bridge -e exp -n qm9_bridge
 
 ## Inference
 
-We provide code that caculates the mean and std of different metrics on generic graphs (15 samplings) and molecule graphs (3 samplings).
+We provide code that caculates the mean and std of different metrics on generic graphs (15 sampling runs) and molecule graphs (3 sampling runs).
 
 ```sh
 sh run -d ${dataset} -t sample -e exp -n ${dataset}_bridge
@@ -101,6 +101,12 @@ Example:
 ```sh
 sh run -d qm9 -t sample -e exp -n qm9_bridge
 ```
+
+Download our model weights:
+```sh
+sh sh download.sh
+```
+For each dataset, we saved the last and best checkpoints during training. In the paper, we reported on the checkpoints that yielded the best mean results from different runs during sampling.
 
 # Citation
 
