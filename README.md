@@ -104,7 +104,7 @@ sh run -d qm9 -t sample -e exp -n qm9_bridge
 
 Download our model weights:
 ```sh
-sh sh download.sh
+sh download.sh
 ```
 For each dataset, we saved the last and best checkpoints during training. In the paper, we reported on the checkpoints that yielded the best mean results from different runs during sampling.
 
