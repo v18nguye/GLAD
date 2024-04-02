@@ -1,0 +1,3 @@
+name: QM9
+d_x: 4  # node feat (no virtual)
+d_e: 4  # edge feat

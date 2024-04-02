@@ -1,0 +1,39 @@
+save_root: null
+save_dir: null
+base_dir: null # in case of training bridge
+log_file: null
+batch_size: null
+is_continue: null
+distributed: null
+seed: 10000
+
+base:
+  num_epoch: null
+  num_eval: null
+
+  lr: null
+  weight_decay: null
+  clip_norm: false
+  scale: null
+
+bridge:
+  num_epoch: null
+  num_eval: null
+  warmup_epoch: null
+
+  lr: null
+  lr_min: null
+  weight_decay: null
+  clip_norm: null
+
+  sig_min: null
+  sig_max: null
+  noise_type: null
+  init_type: null
+  num_step: null
+  noise_decay: null
+  load_best_base: true
+  use_global_embed: false
+
+sampler:
+  num_sample: null

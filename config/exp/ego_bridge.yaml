@@ -1,0 +1,47 @@
+# @package _global_
+
+train:
+  save_root: './ckpts/exp'
+  base_dir: '/ego_base'
+  save_dir: '/ego_bridge'
+  log_file: 'log.txt'
+  batch_size: 64
+  is_continue: false
+  distributed: true
+
+  base:
+    scale: 1.0
+    
+  bridge:
+    num_epoch: 10000
+    warmup_epoch: 20
+    num_eval: 100
+
+    lr: 5e-4
+    lr_min: 1e-4
+    weight_decay: 1e-4
+    clip_norm: false
+
+    sig_min: 1.0
+    sig_max: 3.0
+    noise_type: exp
+    init_type: const
+    num_step: 1000
+    noise_decay: true
+    load_best_base: true
+    use_global_embed: true
+
+  sampler:
+    num_sample: 40
+
+model:
+  base:
+    dec:
+      n_layers: 4
+    quantizer:
+      q_level: [5,5,5,5,5,5]
+      num_layers: 5
+      max_node_num: 18
+  bridge:
+    n_head: 8
+    n_layers: 4

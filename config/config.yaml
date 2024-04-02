@@ -1,0 +1,4 @@
+defaults:
+    - model : default
+    - train: default
+    - data: qm9
