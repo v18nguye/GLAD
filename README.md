@@ -108,5 +108,4 @@ booktitle={ICML 2024 Workshop on Structured Probabilistic Inference {\&} Generat
 year={2024},
 url={https://openreview.net/forum?id=aY1gdSolIv}
 }
-}
 ```
