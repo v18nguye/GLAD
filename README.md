@@ -1,5 +1,4 @@
-# GLAD
-Discrete Latent Graph Generative Modeling with Diffusion Bridges
+GLAD: Improving Latent Graph Generative Modeling with Simple Quantization
 ---
 ### Abstract
 Exploring the graph latent structures has not garnered much attention in the graph generative research field. Yet, exploiting the latent space is as crucial as working on the data space for discrete data such as graphs. However, previous methods either failed to preserve the permutation symmetry of graphs or lacked an effective approaches to model appropriately within the latent space. To mitigate those issues, we propose a simple, yet effective discrete latent graph diffusion generative model. Our model, namely GLAD, not only overcomes the drawbacks of existing latent approaches, but also alleviates inherent issues present in diffusion methods applied on the graph space. We validate our generative model on the molecular benchmark datasets, on which it demonstrates competitive performance compared with the state-of-the-art baselines. 
