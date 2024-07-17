@@ -1,0 +1,27 @@
+# @package _global_
+
+train:
+  save_root: './ckpts/exp'
+  save_dir: '/zinc_base'
+  log_file: 'log.txt'
+  batch_size: 512
+  is_continue: false
+  distributed: true
+  
+  base:
+    num_epoch: 1000
+    num_eval: 50
+
+    lr: 5e-4
+    weight_decay: 1e-4
+    clip_norm: false
+    scale: 3.0
+
+model:
+  base:
+    dec:
+      n_layers: 4
+    quantizer:
+      q_level: [5,5,5,5,5,5]
+      num_layers: 5
+      max_node_num: 38

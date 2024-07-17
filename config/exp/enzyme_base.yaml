@@ -1,0 +1,39 @@
+# @package _global_
+
+train:
+  save_root: './ckpts/exp'
+  save_dir: '/enzyme_base'
+  log_file: 'log.txt'
+  batch_size: 64
+  is_continue: false
+  distributed: true
+  
+  base:
+    num_epoch: 5000
+    num_eval: 60
+
+    lr: 1e-3
+    weight_decay: 1e-4
+    clip_norm: false
+    scale: 1.0
+
+model:
+  base:
+    enc:
+      n_head: 8
+      n_layers: 8
+      in_dim_E: 2
+      hid_dim_X: 128
+      hid_dim_E: 32
+      hid_dim_y: 64
+    dec:
+      n_head: 8
+      n_layers: 4
+      in_dim_E: 2
+      hid_dim_X: 128
+      hid_dim_E: 32
+      hid_dim_y: 64
+    quantizer:
+      q_level: [5,5,5,5,5,5]
+      num_layers: 5
+      max_node_num: 125

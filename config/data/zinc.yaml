@@ -1,0 +1,3 @@
+name: ZINC250k
+d_x: 9  # node feat
+d_e: 4  # edge feat

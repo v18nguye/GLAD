@@ -1,0 +1,29 @@
+base:
+  add_noise: true # add noise to node feature input
+  enc:
+    n_head: 8
+    n_layers: 8
+    in_dim_E: 2
+    hid_dim_X: 256
+    hid_dim_E: 128
+    hid_dim_y: 64
+  dec:
+    n_head: 8
+    n_layers: 4
+    in_dim_E: 2
+    hid_dim_y: 64
+    hid_dim_X: 256
+    hid_dim_E: 128
+  quantizer:
+    q_level: [5,5,5,5,5,5]
+    num_layers: null
+    act: selu
+    is_norm: true
+    max_node_num: null
+bridge:
+  n_head: 8
+  n_layers: 4
+  in_dim_E: 2
+  hid_dim_y: 64 
+  hid_dim_X: 256
+  hid_dim_E: 128
