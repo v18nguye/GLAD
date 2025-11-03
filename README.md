@@ -103,3 +103,18 @@ Download our model weights:
 ```sh
 sh download.sh
 ```
+
+## Citation
+
+Please refer to our work if you find our paper with the released code useful in your research. Thank you!
+
+```
+@inproceedings{
+nguyen2024glad,
+title={{GLAD}: Improving Latent Graph Generative Modeling with Simple Quantization},
+author={Van Khoa Nguyen and Yoann Boget and Frantzeska Lavda and Alexandros Kalousis},
+booktitle={ICML 2024 Workshop on Structured Probabilistic Inference {\&} Generative Modeling},
+year={2024},
+url={https://openreview.net/forum?id=aY1gdSolIv}
+}
+```
